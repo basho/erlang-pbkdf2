@@ -96,7 +96,7 @@ to_hex([Char | Rest]) ->
 	Key :: binary().
 
 pbkdf2(MacFunc, Password, Salt, Iterations, DerivedLength, BlockIndex, Acc) ->
-	case iolist_size(Acc) > DerivedLength of
+	case iolist_size(Acc) >= DerivedLength of
 		true ->
 			<<Bin:DerivedLength/binary, _/binary>> = iolist_to_binary(lists:reverse(Acc)),
 			Bin;
