@@ -1,8 +1,11 @@
 {application, pbkdf2, [
 	{description, "Erlang PBKDF2 Key Derivation Function"},
-	{vsn, git},
+	{vsn, "2.0.0"},
 	{registered, []},
 	{applications, [kernel, stdlib]},
 	{modules, [pbkdf2]},
-	{env, []}
+	{env, []},
+        {maintainers,["basho", "Heinz N. Gies"]},
+        {licenses,["Apache"]},
+        {links,[{"Github","https://github.com/basho/erlang-pbkdf2"}]}
 ]}.
