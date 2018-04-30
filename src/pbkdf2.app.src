@@ -2,7 +2,7 @@
 	{description, "Erlang PBKDF2 Key Derivation Function"},
 	{vsn, git},
 	{registered, []},
-	{applications, [kernel, stdlib]},
+	{applications, [kernel, stdlib, crypto]},
 	{modules, [pbkdf2]},
 	{env, []}
 ]}.
