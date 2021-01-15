@@ -3,16 +3,16 @@
 all: deps compile
 
 compile: deps
-	./rebar compile
+	./rebar3 compile
 
 deps:
-	test -d deps || ./rebar get-deps
+	test -d deps || ./rebar3 get-deps
 
 clean:
-	./rebar clean
+	./rebar3 clean
 
 distclean: clean
-	./rebar delete-deps
+	./rebar3 delete-deps
 
 DIALYZER_APPS = kernel stdlib erts sasl ssl crypto public_key
 
