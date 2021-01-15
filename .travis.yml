@@ -1,12 +1,9 @@
-before_install:
-   - sudo apt-get update
-   - sudo apt-get install libicu-dev libmozjs-dev
-before_script: ./bootstrap && ./configure
-script: make distcheck
+dist: trusty
 language: erlang
+script: make
 otp_release:
-   - R15B02
-   - R15B01
-   - R15B
-   - R14B04
-   - R14B03
+   - 23.0
+   - 22.0
+   - 21.0
+   - 20.0
+   - 19.0
