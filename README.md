@@ -11,17 +11,17 @@ A [PBKDF2][] implementation for [Erlang][] extracted from [Apache CouchDB][].
 Building
 --------
 
-`erlang-pbkdf2` uses [rebar][] to manage the build process. To build the project, run:
+`erlang-pbkdf2` uses [rebar3][] to manage the build process. To build the project, run:
 
-	./rebar compile
+	./rebar3 compile
 
 You can then run the `xref` and `eunit` tests:
 
-	./rebar xref eunit
+	./rebar3 xref eunit
 
 If you want to remove all generated files, run:
 
-	./rebar clean
+	./rebar3 clean
 
 [rebar]: https://github.com/rebar/rebar/wiki
 
