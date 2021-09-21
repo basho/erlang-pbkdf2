@@ -4,6 +4,8 @@
 #include <syslog.h>
 #include <string.h>
 
+#include <openssl/evp.h>
+
 #include <ei.h>
 
 int main() {
